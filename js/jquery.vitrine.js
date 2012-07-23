@@ -1,6 +1,6 @@
 /*======================================================================================
  * vitrine - jQuery Plugin (v0.3 alpha)
- * Copyright 2012, Grupo Llorsat
+ * Copyright 2012, Guillermo Alvarado
  * Dual licensed under the MIT or GPL Version 2 licenses.
  *======================================================================================
  * Authors:
@@ -9,7 +9,7 @@
  *
  *======================================================================================
  * Project Website:
- * http://localhost
+ * https://github.com/galvarado/jquery-vitrine
  *
  * Requires Easing Plugin for Window Animations:
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
