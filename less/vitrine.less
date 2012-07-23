@@ -1,0 +1,69 @@
+@light-green: #4CA20B;
+@dark-green: #285C00;
+@medium-green: #C9D438;
+@black: #35363A;
+@white: white;
+@base-color: @black;
+
+* {
+    margin:0;
+    padding:0;
+}
+.min{
+    float: left;
+    border: 1px solid @base-color;
+}
+.vitrine {
+    border: 1px solid @base-color;
+    background-color: @white;
+}
+.active {
+    z-index: 100;
+}
+#vitrine-footer {
+    width: 99.9%;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.vitrine-title-container {
+    width: 100%;
+    height:14px;
+    padding: 0 0 10px 0;
+    background-color: @white;
+    border-bottom: 1px solid @base-color;
+    .vitrine-title {
+        float: left;
+        max-width: 80%;
+        height: 100%;
+        color: red;
+        font-size: 14px;
+        padding: 5px 0 0 10px;
+    }
+    .vitrine-buttons {
+        float: right;
+        max-width: 13%;
+        height: 100%;
+        cursor: pointer;
+        position:relative;
+        padding: 0 0 10px 0;
+        .vitrine-button {
+            position:absolute;
+            display:block;
+            width:14px;
+            top:0;
+            text-align:center;
+        }
+        .vitrine-min-button {
+            right:28px;
+        }
+        .vitrine-max-button {
+            right:14px;
+        }
+        .vitrine-close-button {
+            right:0;
+        }
+    }
+}
