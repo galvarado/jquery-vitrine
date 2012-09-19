@@ -70,12 +70,23 @@
                 vitrine.css('position', 'absolute');
                 vitrine.css('top', o.PositionTop);
                 vitrine.css('left', o.PositionLeft);
+                if(o.PositionTop == 'auto'){
+                    var h = $(window).height() - $('#vitrine-footer').height();
+                    var margin = (h - parseInt(o.Height))/2;
+                    o.PositionTop = (margin + parseInt(o.Height)) * -1;
+                    vitrine.css('top', o.PositionTop);
+                }
+                if(o.PositionLeft == 'auto'){
+                    o.PositionLeft = ($(window).width() - parseInt(o.Width)) / 2;
+                    vitrine.css('left', o.PositionLeft);
+                }
                 // To set the focus when user click in the window
                 vitrine.live('click', function(){
                     focus(vitrine)
                 });
                 // Enable draggable functionality
                 vitrine.draggable({
+                    handle: '.vitrine-title-container, .vitrine-title-header',
                     start: function() {
                         // Set the focus when drag event starts
                         focus(vitrine);
