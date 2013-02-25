@@ -81,7 +81,7 @@
                     vitrine.css('left', o.PositionLeft);
                 }
                 // To set the focus when user click in the window
-                vitrine.live('click', function(){
+                vitrine.on('click', function(){
                     focus(vitrine)
                 });
                 // Enable draggable functionality
@@ -174,7 +174,7 @@
                 });
                 // Events when the window is minimized
                 // Event to restore the window
-                $min_vitrine.live('click', function(){
+                $min_vitrine.on('click', function(){
                     $min_vitrine.remove();
                     vitrine.show();
                     focus(vitrine);
@@ -198,7 +198,7 @@
                     }
                 });
                 // Event to close the window
-                $min_close_button.live('click', function(){
+                $min_close_button.on('click', function(){
                     $min_vitrine.remove();
                     vitrine.remove();
                 });
